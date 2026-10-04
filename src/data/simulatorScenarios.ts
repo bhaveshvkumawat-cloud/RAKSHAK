@@ -1,4 +1,5 @@
 import { SimulatorStep, DebriefPoint } from '../types';
+import fakeProfitScreenshot from '../assets/images/fake_profit_screenshot_1791095556625.jpg';
 
 export const SCENARIO_STEPS: Record<string, SimulatorStep> = {
   step_intro: {
@@ -33,7 +34,7 @@ export const SCENARIO_STEPS: Record<string, SimulatorStep> = {
         text: 'Look at today’s private client terminal gains. Over ₹4.8 Lakhs booked by our morning VIP members!',
         textHi: 'आज सुबह के हमारे प्राइवेट VIP मेंबर्स के खाते देखें। 4.8 लाख रुपये से ज्यादा का मुनाफा बुक किया गया!',
         time: '10:43 AM',
-        image: '/src/assets/images/fake_profit_screenshot_1791095556625.jpg',
+        image: fakeProfitScreenshot,
       },
       {
         id: 'msg_4',

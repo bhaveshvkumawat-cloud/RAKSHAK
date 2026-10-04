@@ -19,6 +19,7 @@ import { getLocalizedStep } from '../data/translations';
 import { speakText, stopSpeech } from '../utils/speech';
 import { sound } from '../utils/audioEffects';
 import { SIMULATOR_AUDIO_SCRIPTS } from '../utils/multilingualAudio';
+import analystAvatar from '../assets/images/scam_analyst_avatar_1791095530297.jpg';
 
 interface RehearseSimulatorProps {
   language: Language;
@@ -207,7 +208,7 @@ export const RehearseSimulator: React.FC<RehearseSimulatorProps> = ({
             <div className="flex items-center gap-2.5 min-w-0">
               <div className="relative w-10 h-10 rounded-full overflow-hidden ring-1 ring-emerald-400/50 bg-slate-800 shrink-0">
                 <img
-                  src="/src/assets/images/scam_analyst_avatar_1791095530297.jpg"
+                  src={analystAvatar}
                   alt="Analyst Avatar"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
