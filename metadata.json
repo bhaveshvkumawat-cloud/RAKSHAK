@@ -1,0 +1,8 @@
+{
+  "name": "Remix Rakshak - Rehearse. Verify. Recover.",
+  "description": "A Hindi \u0026 English voice-first mobile web app that protects Indian retail investors from scams before, during, and after.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    background: #f5f7fb;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+    background: #f5f7fb;
+    color: #172554;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+  }
+}
+
+/* Rakshak mobile app */
+.rakshak-mobile {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background: #f5f7fb;
+}
+
+.rakshak-screen {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+  .rakshak-mobile {
+    width: 100%;
+  }
+
+  .rakshak-screen {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 481px) {
+  .rakshak-screen {
+    box-shadow: 0 12px 40px rgba(30, 41, 99, 0.08);
+  }
+}
+
+/* Main page area */
+.rakshak-page {
+  padding: 16px;
+  padding-bottom: 100px;
+}
+
+/* Mobile cards */
+.rakshak-card {
+  background: #ffffff;
+  border: 1px solid #e8eaf3;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(30, 41, 99, 0.06);
+}
+
+/* Primary button */
+.rakshak-primary {
+  background: #5146d8;
+  color: white;
+  border-radius: 14px;
+  min-height: 48px;
+  font-weight: 700;
+}
+
+/* Safe */
+.rakshak-safe {
+  color: #059669;
+}
+
+/* Danger */
+.rakshak-danger {
+  color: #dc2626;
+}
+
+/* Prevent mobile browser zoom */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
